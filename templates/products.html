@@ -1,0 +1,176 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Our Products - Sweet Bakery</title>
+
+<link rel="stylesheet" href="{% static 'css/products.css' %}">
+
+</head>
+
+
+<body>
+
+
+<!-- Navbar -->
+
+<nav>
+
+<div class="logo">
+
+<h2>🍰 Sweet Bakery</h2>
+
+</div>
+
+
+<ul>
+
+<li><a href="/">Home</a></li>
+<li><a href="/about/">About</a></li>
+<li><a href="/products/">Products</a></li>
+<li><a href="/gallery/">Gallery</a></li>
+<li><a href="/contact/">Contact</a></li>
+
+</ul>
+
+</nav>
+
+
+
+
+
+<!-- Page Heading -->
+
+
+<section class="heading">
+
+
+<h1>
+Our Delicious Products
+</h1>
+
+
+<p>
+Freshly baked cakes, pastries and desserts made with love.
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- Products Section -->
+
+
+<section class="products">
+
+
+<div class="product-container">
+
+
+
+{% for product in products %}
+
+
+
+<div class="card">
+
+
+
+<img src="{{ product.image.url }}" 
+alt="{{ product.name }}">
+
+
+
+<div class="card-content">
+
+
+<h2>
+{{ product.name }}
+</h2>
+
+
+
+<p class="price">
+
+₹ {{ product.price }}
+
+</p>
+
+
+
+<p>
+
+{{ product.description }}
+
+</p>
+
+
+
+<button>
+Order Now
+</button>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+{% endfor %}
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+
+
+<footer>
+
+
+<h2>
+Sweet Bakery
+</h2>
+
+
+<p>
+Fresh cakes made with love.
+</p>
+
+
+<p>
+© 2026 Sweet Bakery
+</p>
+
+
+</footer>
+
+
+
+
+</body>
+
+</html>

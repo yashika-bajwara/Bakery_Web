@@ -1,0 +1,213 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Contact Us</title>
+
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
+
+</head>
+
+
+<body>
+
+
+<nav>
+
+<h2>🍰 Sweet Bakery</h2>
+
+
+<ul>
+
+<li><a href="/">Home</a></li>
+
+<li><a href="/about/">About</a></li>
+
+<li><a href="/products/">Products</a></li>
+
+<li><a href="/gallery/">Gallery</a></li>
+
+<li><a href="/contact/">Contact</a></li>
+
+</ul>
+
+
+</nav>
+
+
+
+
+
+<section class="banner">
+
+
+<h1>Contact Us</h1>
+
+<p>
+We would love to hear from you
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+<section class="contact">
+
+
+<div class="info">
+
+
+<h2>
+Get In Touch
+</h2>
+
+
+<p>
+📍 Address: Your Bakery,Delhi
+</p>
+
+
+<p>
+📞 Phone: +91 99856-67821
+</p>
+
+
+<p>
+✉ Email: bakery@gmail.com
+</p>
+
+
+
+</div>
+
+
+
+
+
+<div class="form-box">
+
+
+<h2>
+Send Message
+</h2>
+
+
+
+<form method="POST">
+
+
+{% csrf_token %}
+
+
+<input type="text" 
+name="name"
+placeholder="Your Name"
+required>
+
+
+
+<input type="email"
+name="email"
+placeholder="Your Email"
+required>
+
+
+
+<input type="text"
+name="subject"
+placeholder="Subject"
+required>
+
+
+
+<textarea 
+name="message"
+placeholder="Your Message"
+required></textarea>
+
+
+
+<button type="submit">
+Send Message
+</button>
+
+
+</form>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- Map -->
+
+
+<section class="map">
+
+
+<h2>
+Find Us
+</h2>
+
+
+<!-- Paste your Google Map iframe here -->
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d163451.22244403203!2d76.86778983452967!3d28.873383712206703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssweet%20bakery%20delhi!5e0!3m2!1sen!2sin!4v1784737076713!5m2!1sen!2sin" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"> 
+
+
+
+</iframe>
+
+
+</section>
+
+
+
+
+
+
+
+
+<footer>
+
+
+<h2>
+Sweet Bakery
+</h2>
+
+
+<p>
+Fresh cakes made with love.
+</p>
+
+
+<p>
+© 2026 Sweet Bakery
+</p>
+
+
+</footer>
+
+
+
+</body>
+
+</html>

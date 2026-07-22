@@ -1,0 +1,75 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Gallery</title>
+
+<link rel="stylesheet" href="{% static 'css/gallery.css' %}">
+
+</head>
+
+<body>
+
+<nav>
+
+<h2>🍰 Sweet Bakery</h2>
+
+<ul>
+
+<li><a href="/">Home</a></li>
+<li><a href="/about/">About</a></li>
+<li><a href="/products/">Products</a></li>
+<li><a href="/gallery/">Gallery</a></li>
+<li><a href="/contact/">Contact</a></li>
+
+</ul>
+
+</nav>
+
+
+
+<section class="banner">
+
+<h1>Our Bakery Gallery</h1>
+
+<p>Take a look at our delicious creations.</p>
+
+</section>
+
+
+
+<section class="gallery">
+
+{% for image in images %}
+
+<div class="box">
+
+<img src="{{ image.image.url }}" alt="{{ image.title }}">
+
+<h3>{{ image.title }}</h3>
+
+</div>
+
+{% endfor %}
+
+</section>
+
+
+
+<footer>
+
+<h2>Sweet Bakery</h2>
+
+<p>Fresh cakes made with love.</p>
+
+<p>© 2026 Sweet Bakery</p>
+
+</footer>
+
+</body>
+
+</html>

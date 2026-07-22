@@ -1,0 +1,597 @@
+/* General */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+
+    font-family:'Poppins', sans-serif;
+    background:#fff8f2;
+    color:#4b2e1f;
+
+}
+
+
+
+/* Navbar */
+
+
+nav{
+
+    height:80px;
+    background:#6b3418;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 60px;
+
+    position:sticky;
+    top:0;
+    z-index:10;
+
+}
+
+
+
+.logo h2{
+
+    color:white;
+    font-size:28px;
+
+}
+
+
+
+nav ul{
+
+    display:flex;
+    gap:30px;
+
+    list-style:none;
+
+}
+
+
+
+nav ul li a{
+
+    text-decoration:none;
+    color:white;
+
+    font-size:17px;
+
+    transition:0.3s;
+
+}
+
+
+
+nav ul li a:hover{
+
+    color:#ffd6a5;
+
+}
+
+
+
+
+
+/* Hero Section */
+
+
+.hero{
+
+    height:600px;
+
+    background-image:url("../images/about-banner.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+
+.hero-content{
+
+    background:rgba(255,255,255,0.75);
+
+    padding:50px;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    backdrop-filter:blur(5px);
+
+    animation:slide 1.5s;
+
+}
+
+
+
+.hero-content h1{
+
+    font-size:55px;
+
+    color:#7b3f00;
+
+}
+
+
+
+.hero-content p{
+
+    font-size:22px;
+
+    margin:20px;
+
+}
+
+
+
+.btn{
+
+    display:inline-block;
+
+    background:#c76b2a;
+
+    color:white;
+
+    padding:15px 35px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    transition:0.3s;
+
+}
+
+
+
+.btn:hover{
+
+    background:#8b4513;
+
+    transform:scale(1.1);
+
+}
+
+
+
+
+
+
+
+/* Story Section */
+
+
+.story{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:50px;
+
+    padding:80px;
+
+}
+
+
+
+.story-image img{
+
+    width:450px;
+
+    height:350px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+
+}
+
+
+
+.story-text{
+
+    font-size:18px;
+
+    line-height:1.7;
+
+}
+
+
+
+.story-text h2{
+
+    font-size:40px;
+
+    color:#8b4513;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+
+
+
+/* Statistics */
+
+
+.stats{
+
+    background:#8b4513;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:80px;
+
+    padding:50px;
+
+    text-align:center;
+
+}
+
+
+
+.stats h2{
+
+    font-size:45px;
+
+    color:#ffd6a5;
+
+}
+
+
+
+.stats p{
+
+    font-size:18px;
+
+}
+
+
+
+
+
+
+
+
+/* Mission */
+
+
+.mission{
+
+    padding:70px;
+
+    text-align:center;
+
+}
+
+
+
+.mission h2{
+
+    font-size:40px;
+
+    color:#8b4513;
+
+}
+
+
+
+.mission-box{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:40px;
+
+    margin-top:40px;
+
+}
+
+
+
+.card{
+
+    width:350px;
+
+    padding:35px;
+
+    background:white;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+
+    transition:0.4s;
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-15px);
+
+}
+
+
+
+.card h3{
+
+    color:#c76b2a;
+
+    font-size:25px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+
+
+
+
+
+/* Chef Section */
+
+
+.chef{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:50px;
+
+    padding:80px;
+
+    background:#fff0e5;
+
+}
+
+
+
+.chef img{
+
+    width:300px;
+
+    height:300px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:8px solid #c76b2a;
+
+}
+
+
+
+.chef-text h2{
+
+    font-size:40px;
+
+    color:#8b4513;
+
+}
+
+
+
+
+
+
+
+/* Team */
+
+
+.team{
+
+    text-align:center;
+
+    padding:70px;
+
+}
+
+
+
+.team h2{
+
+    font-size:40px;
+
+    color:#8b4513;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.team img{
+
+    width:70%;
+
+    height:350px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+}
+
+
+
+
+
+
+
+
+/* Quote */
+
+
+.quote{
+
+    background:#c76b2a;
+
+    color:white;
+
+    padding:60px;
+
+    text-align:center;
+
+}
+
+
+
+.quote h2{
+
+    font-size:35px;
+
+    font-style:italic;
+
+}
+
+
+
+
+
+
+
+
+/* Footer */
+
+
+footer{
+
+    background:#3b1d0d;
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+
+
+footer a{
+
+    color:#ffd6a5;
+
+    margin:10px;
+
+    text-decoration:none;
+
+}
+
+
+
+
+
+/* Animation */
+
+
+@keyframes slide{
+
+
+from{
+
+opacity:0;
+
+transform:translateY(50px);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+
+}
+
+
+
+
+
+
+
+/* Responsive */
+
+
+@media(max-width:900px){
+
+
+.story,
+.chef{
+
+    flex-direction:column;
+
+}
+
+
+.stats{
+
+    flex-direction:column;
+
+}
+
+
+.mission-box{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+
+nav{
+
+    padding:20px;
+
+}
+
+
+.hero-content h1{
+
+    font-size:35px;
+
+}
+
+
+}
